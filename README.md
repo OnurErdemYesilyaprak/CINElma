@@ -5,4 +5,5 @@
    ```sql
    CREATE DATABASE CINElmaDB;
 3.Object Explorer’da yeni oluşturduğunuz veritabanına sağ tıklayın ve New Query seçeneğini seçin.
+
 4.script.sql dosyasını çalıştırın.
