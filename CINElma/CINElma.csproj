@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{086BED2A-9F12-4A16-B92E-B6AF82D01DA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CINElma</RootNamespace>
+    <AssemblyName>CINElma</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.71.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.71\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bilet Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilet Detay.Designer.cs">
+      <DependentUpon>Bilet Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilet Sorgula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilet Sorgula.Designer.cs">
+      <DependentUpon>Bilet Sorgula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilet İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilet İşlemleri.Designer.cs">
+      <DependentUpon>Bilet İşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CINElma Main Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CINElma Main Page.Designer.cs">
+      <DependentUpon>CINElma Main Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film Detay.Designer.cs">
+      <DependentUpon>Film Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film Kayıt.Designer.cs">
+      <DependentUpon>Film Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmDetaySayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmDetaySayfası.Designer.cs">
+      <DependentUpon>FilmDetaySayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FilmListesi.Designer.cs">
+      <DependentUpon>FilmListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getdata.cs" />
+    <Compile Include="OyuncuListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OyuncuListesi.Designer.cs">
+      <DependentUpon>OyuncuListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salon İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salon İşlemleri.Designer.cs">
+      <DependentUpon>Salon İşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalonListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalonListesi.Designer.cs">
+      <DependentUpon>SalonListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yönetmenlistesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="yönetmenlistesi.Designer.cs">
+      <DependentUpon>yönetmenlistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İşlem Seçim 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İşlem Seçim 1.Designer.cs">
+      <DependentUpon>İşlem Seçim 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İşlem Seçim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İşlem Seçim.Designer.cs">
+      <DependentUpon>İşlem Seçim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bilet Detay.resx">
+      <DependentUpon>Bilet Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilet Sorgula.resx">
+      <DependentUpon>Bilet Sorgula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilet İşlemleri.resx">
+      <DependentUpon>Bilet İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CINElma Main Page.resx">
+      <DependentUpon>CINElma Main Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film Detay.resx">
+      <DependentUpon>Film Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film Kayıt.resx">
+      <DependentUpon>Film Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmDetaySayfası.resx">
+      <DependentUpon>FilmDetaySayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmListesi.resx">
+      <DependentUpon>FilmListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OyuncuListesi.resx">
+      <DependentUpon>OyuncuListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Salon İşlemleri.resx">
+      <DependentUpon>Salon İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalonListesi.resx">
+      <DependentUpon>SalonListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yönetmenlistesi.resx">
+      <DependentUpon>yönetmenlistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İşlem Seçim 1.resx">
+      <DependentUpon>İşlem Seçim 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İşlem Seçim.resx">
+      <DependentUpon>İşlem Seçim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-11 205006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biletlogosu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biletlogosu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biletlogosu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bltlogo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bltmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bltlogomor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmlogosu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcı logosu11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcı logosu22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcı logosu33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filmşeridi.11png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkımda11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinemasalonu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-24 233949.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-25 011444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-25 011802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aksiyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bilimkurgu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\komedi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animasyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gerilim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aşk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantastik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\komedi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korku.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aşk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genelizleyici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şiddet ve korku.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-27 025017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-27 025223.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-27 025432.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-27 025628.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-27 025952.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\united-states.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocos-keeling-islands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Retro Movie Night Poster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bir sinema salonu çizeceksin  %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bir sinema perdesi resmi istiyorum ancak bu perdenin renkleri klasik sinema perdesinin renklerini koruyarak içerisine hafif soğuk mavi ve soğuk mor renklerini karıştırmanı istiyorum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seçili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boş.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seçili1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seçili2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\production.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signature.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
