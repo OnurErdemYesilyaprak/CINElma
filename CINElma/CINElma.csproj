@@ -460,5 +460,17 @@
   <ItemGroup>
     <None Include="Resources\signature.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\3_idiots_poster.jpg" />
+    <Content Include="Resources\Başlangıç.jpg" />
+    <Content Include="Resources\Beautiful_mind.jpg" />
+    <Content Include="Resources\Dövüş_Kulübü_film_afişi.jpg" />
+    <Content Include="Resources\Er-Ryani-kurtarmak-poster.png" />
+    <Content Include="Resources\Esaretin-bedeli.jpg" />
+    <Content Include="Resources\Five_hundred_days_of_summer.jpg" />
+    <Content Include="Resources\Forrest_Gump_%28film,_1994%29.jpg" />
+    <Content Include="Resources\Interstellar_film_poster.jpg" />
+    <Content Include="Resources\The_Truman_Show_%28film,_1998%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
