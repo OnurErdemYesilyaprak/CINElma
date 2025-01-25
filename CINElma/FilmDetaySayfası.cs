@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,7 +54,7 @@ namespace CINElma
 
             if (reader.Read())
             {
-                pbafiş.ImageLocation = reader["AFİŞ"].ToString();
+                pbafiş.ImageLocation = Path.Combine(Application.StartupPath, reader["AFİŞ"].ToString());
                 lblad.Text = reader["ADI"].ToString();
                 lbltür.Text = reader["TÜRÜ"].ToString();
                 lbldil.Text = reader["DİL"].ToString();

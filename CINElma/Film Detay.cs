@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,9 +32,10 @@ namespace CINElma
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read()) 
             {
+                
                 FilmListesi userControl = new FilmListesi();
                 userControl.lblfilmadı.Text = reader["ADI"].ToString();
-                userControl.pbresim.ImageLocation = reader["AFİŞ"].ToString() ;
+                userControl.pbresim.ImageLocation = Path.Combine(Application.StartupPath, reader["AFİŞ"].ToString());
                 userControl.lblıd.Text = reader["ID"].ToString() ;
                 flpfilmliste.Controls.Add(userControl);
 

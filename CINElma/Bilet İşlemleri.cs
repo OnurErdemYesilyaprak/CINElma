@@ -493,9 +493,9 @@ namespace CINElma
             txtname.Focus();
         }
 
-        //private void pnlup_Paint(object sender, PaintEventArgs e)
-        //{
+        private void pnlup_Paint(object sender, PaintEventArgs e)
+        {
 
-        //}
+        }
     }
 }
