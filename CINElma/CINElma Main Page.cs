@@ -35,7 +35,7 @@ namespace CINElma
         string f13 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resimler\\blackwidow.png");
         string f14 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resimler\\pianist.png");
         string f15 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resimler\\fightclub.png");
-       
+        
         public CINElma_Main_Page()
         {
             InitializeComponent();
